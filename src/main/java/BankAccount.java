@@ -54,12 +54,13 @@ private String DateCreated;
 	public void transferAmount() {
 		
 	}
-	public void calculateZakat() {
-		if(AccountBalance >= 20000)
-		{
-			double Zakat = (AccountBalance*2.5)/100;
+	public int calculateZakat(int sum) {
+	
+		
+			int Zakat = (sum*2)/100;
 			System.out.println("Zakat Amount is " + Zakat);
-		}
+			return Zakat;
+		
 	}
 	public void displayAllDeductions() {
 		
